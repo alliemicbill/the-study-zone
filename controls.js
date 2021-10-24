@@ -12,8 +12,8 @@ var artistText = document.getElementById("artistText");
 var timeText = document.getElementById("timeText");
 var log = document.getElementById("log");
 
-var PLAY_ICON = "icons/32/play-32.png";
-var PAUSE_ICON = "icons/32/pause-32.png";
+var PLAY_ICON = "media/room2/icons/32/play-32.png";
+var PAUSE_ICON = "media/room2/icons/32/pause-32.png";
 
 // ================ Add properties and methods to the playlist object
 var playlist = {};
