@@ -10,7 +10,7 @@ body{
   height: 100vh;
   /* overflow: hidden; */
   padding: 10px;
-  background-image: url(media/calm.jpg);
+  background-image: url('media/room1/calm.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
