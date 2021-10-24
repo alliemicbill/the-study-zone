@@ -22,39 +22,52 @@
       <button>Clear All</button>
     </div>
     <header><br>Music Station</header>
-    <div class="music-list">
-        <span>Click Here To Listen <br>To Study Music</span>
-        <img src="media/room1/play.png" 
-        id = "musicButton"
-        width="60"
-        height="60"/>
-    </div>
+    
     <div class="home" >
-        <button id="home">Leave The Study Room</button>
+      <button id="home">Leave The Study Room</button>
     </div>
-    </div>
-  <Audio id="mySong">
-      <source src="media/room1/song.mp3" type="audio/mp3">
-  </Audio>
+  </div>
+
+
+
+  <div id = "container">
+  
+    <audio id="audio">
+      <source id="sourceMP3" src="" type="audio/ogg">
+    </audio>
+      
+    <div id = "wrapper">
+      <!-- Track information-->
+      <div id="trackInfo">
+        <div id="titleText">.</div>
+        <div id="albumText">.</div>
+        <div id="artistText">.</div>
+      </div>
+      
+      <div id="timeInfo">
+        <div><div id="timeBar"><div class="filler"></div></div></div>
+        <div id="timeText"></div>
+      </div>
+      
+      <!-- Controls -->
+      <div id="controls">
+        <div class="button" id="playBtn"><img src="icons/32/play-32.png"></div>
+        <div class="button" id="previousBtn"><img src="icons/32/rewind-32.png"></div>
+        <div class="button" id="nextBtn"><img src="icons/32/forward-32.png"></div>
+        <div id="volumeIcon"><img src="icons/32/volume-32.png"></div>
+        <div><div id="volumeSlider"><div class="filler"></div></div></div>
+      </div>
+  </div>
+  
+  <script src="sliderfy.js"></script>
+  <script src="playlist.js"></script>
+  <script src="controls.js"></script>
   <script>
     var home =document.getElementById("home");
     home.onclick = function(){
     location.href = "/main.html"
     };    
   </script>
-  <script>
-      var mySong = document.getElementById("mySong");
-      var musicButton =document.getElementById("musicButton");
-      musicButton.onclick = function(){
-        if(mySong.paused){
-            mySong.play();
-            musicButton.src = "media/room1/pause.png"
-        }else{
-            mySong.pause();
-            musicButton.src ="media/room1/play.png"
-        }
-      }
-  </script>
-  <script src="to-do.js"></script>
+  <script src="to-do1.js"></script>
 </body>
 </html>
