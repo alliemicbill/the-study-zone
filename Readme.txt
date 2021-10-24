@@ -1,5 +1,5 @@
 project: the study zoon
-By: allie mcclure, gabriel malabanan
+By: allie mcclure, gabriel malabanan, Kirian khanna 
 contact: alliemicbill @gmail.com, aem51564@uga.edu
 Description:
 This is a prototype of a website that can create a conducive space for studying 
