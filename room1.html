@@ -24,7 +24,7 @@
     <header><br>Music Station</header>
     <div class="music-list">
         <span>Click Here To Listen <br>To Study Music</span>
-        <img src="media/play.png" 
+        <img src="media/room1/play.png" 
         id = "musicButton"
         width="60"
         height="60"/>
@@ -34,7 +34,7 @@
     </div>
     </div>
   <Audio id="mySong">
-      <source src="media/song.mp3" type="audio/mp3">
+      <source src="media/room1/song.mp3" type="audio/mp3">
   </Audio>
   <script>
     var home =document.getElementById("home");
@@ -48,10 +48,10 @@
       musicButton.onclick = function(){
         if(mySong.paused){
             mySong.play();
-            musicButton.src = "media/pause.png"
+            musicButton.src = "media/room1/pause.png"
         }else{
             mySong.pause();
-            musicButton.src ="media/play.png"
+            musicButton.src ="media/room1/play.png"
         }
       }
   </script>
