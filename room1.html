@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Room</title>
+    <link rel="stylesheet" href="room1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>To Do List</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+    <header><br>Music Station</header>
+    <div class="music-list">
+        <span>Click Here To Listen <br>To Study Music</span>
+        <img src="media/room1/play.png" 
+        id = "musicButton"
+        width="60"
+        height="60"/>
+    </div>
+    <div class="home" >
+        <button id="home">Leave The Study Room</button>
+    </div>
+    </div>
+  <Audio id="mySong">
+      <source src="media/room1/song.mp3" type="audio/mp3">
+  </Audio>
+  <script>
+    var home =document.getElementById("home");
+    home.onclick = function(){
+    location.href = "/main.html"
+    };    
+  </script>
+  <script>
+      var mySong = document.getElementById("mySong");
+      var musicButton =document.getElementById("musicButton");
+      musicButton.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            musicButton.src = "media/room1/pause.png"
+        }else{
+            mySong.pause();
+            musicButton.src ="media/room1/play.png"
+        }
+      }
+  </script>
+  <script src="to-do.js"></script>
+</body>
+</html>
